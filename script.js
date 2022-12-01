@@ -12,12 +12,15 @@ const pcScoreScreen = document.querySelector(".PCScore")
 const responseScreen = document.querySelector(".response");
 const containerQuery = document.querySelector(".container")
 const againButton = document.querySelector(".playAgain");
+const playerEmoji = document.querySelector(".playerEmoji");
+const pcEmoji = document.querySelector(".pcEmoji");
 
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         let playerChoice = button.className;
         let pcChoice = getComputerChoice();
+        
         playRound(playerChoice,pcChoice);
     })
 });
@@ -33,7 +36,7 @@ function getComputerChoice() {
 }
 
 function playRound(playerChoice,computerChoice) {
-    
+    setEmoji(playerChoice,computerChoice)
     
     if (playerChoice == computerChoice) {
         responseScreen.innerHTML = `${playerChoice} and ${computerChoice} is a tie!`
@@ -122,5 +125,34 @@ function reset() {
 
     playerScoreScreen.innerHTML = `Player: 0`;
     pcScoreScreen.innerHTML = `Computer: 0`;
+
+    playerEmoji.innerHTML = "❔";
+    pcEmoji.innerHTML = "❔";
     
 }
+
+function setEmoji(player,pc) {
+    if (player == "rock") {
+        playerEmoji.innerHTML = "🪨"
+    }
+    else if (player == "paper") {
+        playerEmoji.innerHTML = "📃"
+    }
+    else {
+        playerEmoji.innerHTML = "✂️"
+    }
+
+
+    if (pc =="rock") {
+        pcEmoji.innerHTML = "🪨"
+    }
+
+    else if (pc == "paper") {
+        pcEmoji.innerHTML = "📃"
+    }
+    else {
+        pcEmoji.innerHTML = "✂️"
+    }
+    
+}
+

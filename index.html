@@ -8,24 +8,32 @@
     <title>Rock Paper Scissors!</title>
 </head>
 <body>
+    <header>ROCK PAPER SCISSORS</header>
+
     <div class="response">Choose: Rock, Paper, or Scissors?</div>
-    <div class="scorescreen">
+<div class="emoji">
+    <div class="playerEmoji">❔</div>
+    <div class="pcEmoji">❔</div>
+</div>
+        
+<div class="scorescreen">        
         <div class="playerScore">Player: 0</div>
         <div class="PCScore">Computer: 0</div>
-        </div>
+</div>
 
-    <div class="container">
-    <button class = "rock">Rock</button>
-    <button class = "paper">Paper</button>
-    <button class = "scissors">Scissors</button>
-    </div>
+<div class="container">
+    <button class = "rock">🪨</button>
+    <button class = "paper">📃</button>
+    <button class = "scissors">✂️</button>
+</div>
 
     <div class="playAgain hidden" >
         <button class="againButton">Play Again?</button>
     </div>
 
-
+<footer>Created by Jacob Gasper  <a href="https://www.github.com/jcgasper"><i class="fa-brands fa-github"></i></a> </footer>
 <!--moved script.js to bottom of file to prevent issue of DOM not fully loading prior-->
-<script src="script.js"></script> 
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/4eb379cddf.js" crossorigin="anonymous"></script> 
 </body>
 </html>
