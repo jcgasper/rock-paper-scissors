@@ -1,0 +1,48 @@
+* {
+   
+}
+
+body {
+    background-color: grey;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+.scorescreen {
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    
+}
+
+.playerScore{
+    padding-right: 15px;
+}
+
+.response {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 25px;
+    padding-top: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.playAgain {
+    text-align: center;
+}
