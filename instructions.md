@@ -1,10 +1,10 @@
--Private req:
-- create basic rock paper scissor game functionality
+- ROCK PAPER SCISSORS
+- basic RPS game functionality
 
 
+TO DO:
 
-
-- go public when:
-
-- add picture/animation aspect
-- have score/leaderboard/ Win-Draw-Loss ratios
+Fix Rock EMOJI not loading on PC/Chrome
+adjust CSS and improve styling
+add draws? potentially add leaderboard functionality?
+Media Queries to make presentable on mobile/smaller screens
