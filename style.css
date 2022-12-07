@@ -74,20 +74,20 @@ button:hover {
 
 header {
     text-align: center;
-    background-color: crimson;
+    background-color: darkgray;
     margin-top: 0;
     padding: 20px;
     
 }
 
 footer {
-    position: absolute;
-    bottom: 0px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
     width: 100%;
-    padding: 5px;
+    height: 40px;
+    text-align: center;
+    margin: auto;
 
 
 }
